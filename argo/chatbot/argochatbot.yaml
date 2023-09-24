@@ -27,3 +27,7 @@ spec:
           deploymentname: chatbot-deployment
           image: erikhalt/chatbot:latest
           replicas: 1
+          envar:
+            DEBUG: 'False'
+            DISCORD_TOKEN: 'MTE1NDc4OTI3NDYxMzQ1NjkxNg.GuoAX9.61Q549hBFkkIg647yZSE0lmwqGTBmZhIA6ZTrk'
+            DISCORD_GUILD: 'https://discord.gg/74FRjcFZC'
