@@ -19,4 +19,4 @@ spec:
   source:
     path: helm
     repoURL: git@github.com:erikhalt/pyttmanBOT.git
-    targetRevision: main
+    targetRevision: master
