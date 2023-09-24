@@ -20,3 +20,10 @@ spec:
     path: helm
     repoURL: git@github.com:erikhalt/pyttmanBOT.git
     targetRevision: master
+    helm:
+        values: | 
+          enviroment: dev
+          appname: chatbot
+          deploymentname: chatbot-deployment
+          image: erikhalt/chatbot:latest
+          replicas: 1
