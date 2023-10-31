@@ -21,5 +21,5 @@ spec:
     repoURL: git@github.com:erikhalt/djangoweb.git
     targetRevision: dev
     helm:
-        values: | 
-          -f values.dev.yaml
+      valueFiles: 
+      - values.dev.yaml
