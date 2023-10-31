@@ -15,7 +15,7 @@ spec:
   destination:
     namespace: dev
     server: https://kubernetes.default.svc
-  project: default
+  project: hemsida
   source:
     path: helm
     repoURL: git@github.com:erikhalt/djangoweb.git
