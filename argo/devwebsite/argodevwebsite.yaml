@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dev-django
+  name: djangoproject
   namespace: argocd
   finalizers:
-  - resources-finalizer.argocd.argoproj.io
+    - resources-finalizer.argocd.argoproj.io
 spec:
   syncPolicy:
     automated:
@@ -15,11 +15,11 @@ spec:
   destination:
     namespace: dev
     server: https://kubernetes.default.svc
-  project: default
+  project: hemsida
   source:
     path: helm
     repoURL: git@github.com:erikhalt/djangoweb.git
     targetRevision: dev
     helm:
-        values: | 
-          -f values.dev.yaml
+      valueFiles: 
+      - values.dev.yaml
